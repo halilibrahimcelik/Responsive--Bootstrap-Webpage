@@ -29,9 +29,45 @@ nav{
 
 
 /*! --------------- 2- CAROUSEL ---------------- */
+.carousel{
+
+    .carousel-item{
+        position: relative;
+    }
+    .slide-content{
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+        .carousel-text{
+            text-shadow: 1px 2px 1px #000;
+            font-weight: 500;
+        }
+    }
+    .carousel-indicators{
+ button{
+    background-color: red;
+ }
+    }
+}
 
 
 /*! --------------- 3- ABOUT SECTION ----------- */
+.card-box{
+    width: 18rem;
+}
+
+
+.instructor{
+    width:11rem;
+
+   
+        &:hover{
+            transform: scale(1.07);
+            transition: 0.9s;
+        }
+    
+}
 
 /*! ------------ 4- STUDENTS SECTION ----------- */
 
@@ -42,7 +78,27 @@ nav{
 /*! ---------------- 7- FOOTER --------------- */
 
 
-@media (max-width:992px) {
+.active-visible{
+    display:none;
+
+}
+
+ #courses{
+ 
+     .wrapper{
+
+     
+         .courses{
+        width: 23%;
+     margin:0.6rem 0.6rem;
+             border-radius: 7px;
+             padding: 0;
+          
+         }
+     }
+ }
+
+@media (max-width:992px ) and(min-width:767px) {
     body{
   
         // background-image: url(img/dragon-scales.svg);
@@ -51,8 +107,30 @@ nav{
             content:"";
             height:250px;
         }
+        .courses{
+            width: 45%;
+             margin:1rem 1rem;
+ 
+        }
   
 }
 
 
+
+}
+
+@media  (max-width:768px) {
+    .about-us{
+        .card-box{
+            width:100%;
+        }
+       
+    }
+    .instructor{width: 100%;}
+
+    .courses{
+        width: 90%;
+        margin:1rem 1rem;
+    }
+   
 }

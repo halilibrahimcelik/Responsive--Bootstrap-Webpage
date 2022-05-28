@@ -9,14 +9,6 @@ body::before {
   height: 90px;
 }
 
-@media (max-width: 992px) {
-  body::before {
-    display: block;
-    content: "";
-    height: 250px;
-  }
-}
-
 /*! --------------- 1- NAVBAR ------------------ */
 nav .nav-link {
   color: black;
@@ -33,4 +25,11 @@ nav .navbar-toggler-icon {
 /*! ------------ 5- COURSES SECTION ------------- */
 /*! ------------ 6- CONTACT SECTION ------------ */
 /*! ---------------- 7- FOOTER --------------- */
+@media (max-width: 992px) {
+  body::before {
+    display: block;
+    content: "";
+    height: 250px;
+  }
+}
 /*# sourceMappingURL=app.css.map */

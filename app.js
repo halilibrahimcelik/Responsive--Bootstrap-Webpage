@@ -7,15 +7,6 @@ const fsImagesRow = document.querySelector(".fsImages");
 const opsImageRow = document.querySelector(".opsImages");
 let isVisible = false;
 
-<div class="carousel-caption d-block slide-content d-none d-sm-block">
-  <h5 class="text-danger h2 carousel-text">Succesfull Future</h5>
-  <p class="carousel-text">
-    Some representative placeholder content for the first slide.
-  </p>
-  <a class="btn btn-danger text-white">Start Now</a>
-  <a class="btn btn-warning">Register</a>
-</div>;
-
 fullStackBtn.addEventListener("click", () => {
   fsLightboxInstances["gallery"].open(1);
   if (!isVisible) {

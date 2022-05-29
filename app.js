@@ -7,6 +7,15 @@ const fsImagesRow = document.querySelector(".fsImages");
 const opsImageRow = document.querySelector(".opsImages");
 let isVisible = false;
 
+<div class="carousel-caption d-block slide-content d-none d-sm-block">
+  <h5 class="text-danger h2 carousel-text">Succesfull Future</h5>
+  <p class="carousel-text">
+    Some representative placeholder content for the first slide.
+  </p>
+  <a class="btn btn-danger text-white">Start Now</a>
+  <a class="btn btn-warning">Register</a>
+</div>;
+
 fullStackBtn.addEventListener("click", () => {
   fsLightboxInstances["gallery"].open(1);
   if (!isVisible) {
@@ -61,32 +70,32 @@ devOps.addEventListener("click", () => {
 
 console.log(isVisible);
 
-class Map {
-  constructor() {
-    this.coordinates = {
-      lat: 39.897174,
-      lng: 32.771146,
-    };
+// class Map {
+//   constructor() {
+//     this.coordinates = {
+//       lat: 39.897174,
+//       lng: 32.771146,
+//     };
 
-    this.render();
-  }
+//     this.render();
+//   }
 
-  render() {
-    if (!google) {
-      alert("Could not load maps library, please try again later");
-      return;
-    }
+//   render() {
+//     if (!google) {
+//       alert("Could not load maps library, please try again later");
+//       return;
+//     }
 
-    const map = new google.maps.Map(document.getElementById("map"), {
-      center: this.coordinates,
-      zoom: 16,
-    });
+//     const map = new google.maps.Map(document.getElementById("map"), {
+//       center: this.coordinates,
+//       zoom: 16,
+//     });
 
-    new google.maps.Marker({
-      position: this.coordinates,
-      map: map,
-    });
-  }
-}
+//     new google.maps.Marker({
+//       position: this.coordinates,
+//       map: map,
+//     });
+//   }
+// }
 
-new Map();
+// new Map();

@@ -61,15 +61,23 @@ nav .navbar-toggler-icon {
 /*! ------------ 5- COURSES SECTION ------------- */
 /*! ------------ 6- CONTACT SECTION ------------ */
 /*! ---------------- 7- FOOTER --------------- */
+#map {
+  width: 100%;
+  height: 50vh;
+  border-radius: 10px;
+}
+
 .active-visible {
   display: none;
 }
 
-#courses .wrapper .courses {
-  width: 23%;
-  margin: 0.6rem 0.6rem;
-  border-radius: 7px;
-  padding: 0;
+@media (min-width: 993px) {
+  #courses .wrapper .courses {
+    width: 23%;
+    margin: 0.6rem 0.6rem;
+    border-radius: 7px;
+    padding: 0;
+  }
 }
 
 @media (max-width: 992px) and (min-width: 767px) {

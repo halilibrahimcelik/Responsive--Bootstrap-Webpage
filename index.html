@@ -12,6 +12,10 @@
     crossorigin="anonymous"
     defer
   ></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCduCICPYNhJNSisfsXe6pS4JQnxbaSnRY"
+  defer
+></script>
   <script src="app.js" defer></script>
 
     <!-- Bootstrap CSS Linki -->
@@ -124,7 +128,7 @@
            <!--------------- SECTION-ABOUT --------------------->
       <section id="about" class="mt-2">
         <div class="container justify-content-center">
-          <h1 class="text-danger text-center display-1">ABOUT US</h1>
+          <h1 class="text-danger text-center display-6">ABOUT US</h1>
           <div class="about-us d-flex flex-wrap justify-content-center  justify-content-lg-between">
             <div class="card border-0 card-box" >
               <i class="card-group h1 text-center fa-solid fa-earth-americas"></i>
@@ -155,7 +159,7 @@
       <!--------------- INSTRUCTORS --------------------->
       <section id="instrouctors">
         <div class="container bg-dark pb-4 mb-2">
-          <h1 class="text-danger text-center display-1">OUR INSTRUCTORS</h1>
+          <h1 class="text-danger text-center display-6">OUR INSTRUCTORS</h1>
 
           <div class="container d-flex flex-wrap gap-5 gap-sm-2 justify-content-center p-6">
             <div class="card instructor">
@@ -237,7 +241,7 @@
       <!--------------- SECTION-STUDENTS --------------------->
       <section id="students">
         <div class="container py-2">
-          <h1 class="text-danger text-center display-1">OUR STUDENTS</h1>
+          <h1 class="text-danger text-center display-6">OUR STUDENTS</h1>
           <div class="row align-items-center">
             <div class="col-12 col-sm-6 justify-content-center">
               <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas dignissimos accusamus facere fuga, repellendus architecto unde hic quis velit?</p>
@@ -344,14 +348,91 @@
 
           </section>
 
-
-
-     
-
       <!--------------- SECTION-CONTACT --------------------->
+    
+    <section class="contact">
+      <div class="container bg-light">   
+        <h1 class="display-6 text-danger text-center"> CONTACT</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos incidunt aut atque nemo doloribus!</p>
+      <div class="container bg-light">
+        <div class="about-us d-flex flex-column flex-md-row bg-light  justify-content-center  justify-content-lg-between">
+          <div class="card border-0 card-box bg-light" >
+            <i class="card-group h1 text-center text-danger fa-solid fa-phone"></i>
+            <h5 class="card-title text-center">Phone</h5>
+            <div class="card-body text-center">
+              <a class="card-text"  href="tel:+496170961709"> + 49 666 657 188 </a>    </div>
+          </div>
+          <div class="card border-0 card-box bg-light">
+            <i class="card-group h1 text-center text-danger fa-brands fa-whatsapp"></i>
+            <h5 class="card-title text-center">WhatsApp</h5>
+            <div class="card-body text-center">
+              <a class="card-text" href="tel:+496170961709" > + 49 666 657 188</a>    </div>
+          </div>
+          <div class="card border-0 card-box bg-light">
+            <i class="card-group h1 text-center  text-danger fa-solid fa-mail-bulk"></i>
+            <h5 class="card-title text-center">Email</h5>
+            <div class="card-body text-center">
+              <a class="card-text" href = "mailto:info@example.com">info@clarusway.com</a>    </div>
+          </div>
+        </div>
+
+        <form class="row g-3 p-1 justify-content-center">
+          <div class="col-12 col-sm-6 ">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col-12 col-sm-6">
+            <input type="email" class="form-control" placeholder="Enter Email" aria-label="Email">
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control" placeholder="Enter Subject" aria-label="Last name">
+          </div>
+          <div class="col-12">
+            <textarea class="form-control" placeholder="Enter Your Comment"  rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-danger w-auto px-4 my-2">Submit</button>
+        </form>
+
+
+      </div>
+
+      </div>
+    </section>
+    
+     
+    
+    <section class="location">
+    <div class="container bg-light">
+    
+        <div id="map" class=""></div>
+    
+    </div>
+    
+    </section>
+    
     </main>
 
     <!------------------ FOOTER --------------------->
+<footer class="footer">
+  <div class="bg-dark p-3 mt-5">
+    <div class="d-flex  text-white pt-3 h3 gap-2 justify-content-center">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+    <p class="text-center text-white">© 2022 Copyright by Clarusway</p>
+    
+      <div class="back-top text-end    h1  fixed-bottom p-2" >
+        <a href="#">
+          <i class="fa-solid fa-circle-up text-danger">
+          </i>
+        </a>
+      </div>
+  </div>
+
+</footer>
+
+
 
     <!------------------ SCRIPTS --------------------->
     <!-- fslightbox.js (Image and Video Viewer Library)-->

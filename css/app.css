@@ -6,7 +6,7 @@
 body::before {
   display: block;
   content: "";
-  height: 90px;
+  height: 70px;
 }
 
 /*! --------------- 1- NAVBAR ------------------ */
@@ -41,6 +41,10 @@ nav .navbar-toggler-icon {
   background-color: red;
 }
 
+.carousel .carousel-caption {
+  bottom: 5rem;
+}
+
 /*! --------------- 3- ABOUT SECTION ----------- */
 .card-box {
   width: 18rem;
@@ -57,14 +61,24 @@ nav .navbar-toggler-icon {
   transition: 0.9s;
 }
 
+.instructor i {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.instructor i:hover {
+  opacity: 0.5;
+}
+
 /*! ------------ 4- STUDENTS SECTION ----------- */
 /*! ------------ 5- COURSES SECTION ------------- */
 /*! ------------ 6- CONTACT SECTION ------------ */
 /*! ---------------- 7- FOOTER --------------- */
 #map {
-  width: 100%;
-  height: 100vh;
+  width: 50%;
+  height: 60vh;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .active-visible {
@@ -102,6 +116,9 @@ nav .navbar-toggler-icon {
   .courses {
     width: 90%;
     margin: 1rem 1rem;
+  }
+  #map {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=app.css.map */

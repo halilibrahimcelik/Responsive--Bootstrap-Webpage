@@ -8,7 +8,7 @@ body{
         &::before{
             display:block;
             content:"";
-            height:90px;
+            height:70px;
         }
   
 }
@@ -47,8 +47,12 @@ nav{
     .carousel-indicators{
  button{
     background-color: red;
+
  }
     }
+    .carousel-caption{
+        bottom: 5rem;
+      }
 }
 
 
@@ -66,6 +70,12 @@ nav{
             transform: scale(1.07);
             transition: 0.9s;
         }
+        i{
+            transition: opacity 1s;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
     
 }
 
@@ -77,9 +87,12 @@ nav{
 
 /*! ---------------- 7- FOOTER --------------- */
 #map{
-    width: 100%;
-    height: 100vh;
+    width: 50%;
+    height: 60vh;
     border-radius: 10px;
+    margin:0 auto;
+   
+ 
  
 }
 
@@ -140,6 +153,9 @@ nav{
     .courses{
         width: 90%;
         margin:1rem 1rem;
+    }
+    #map{
+        width: 100%;
     }
   
    
